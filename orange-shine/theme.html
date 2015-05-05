@@ -1,0 +1,143 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="<{$xoops_langcode}>" lang="<{$xoops_langcode}>">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=<{$xoops_charset}>" />
+<meta http-equiv="content-language" content="<{$xoops_langcode}>" />
+<meta name="robots" content="<{$xoops_meta_robots}>" />
+<meta name="keywords" content="<{$xoops_meta_keywords}>" />
+<meta name="description" content="<{$xoops_meta_description}>" />
+<meta name="rating" content="<{$xoops_meta_rating}>" />
+<meta name="author" content="<{$xoops_meta_author}>" />
+<meta name="copyright" content="<{$xoops_meta_copyright}>" />
+<meta name="generator" content="XOOPS" />
+<title><{$xoops_sitename}> - <{$xoops_pagetitle}></title>
+<link href="<{$xoops_url}>/favicon.ico" rel="SHORTCUT ICON" />
+<link rel="stylesheet" type="text/css" media="all" href="<{$xoops_url}>/xoops.css" />
+<link rel="stylesheet" type="text/css" media="all" href="<{$xoops_themecss}>" />
+<!-- RMV: added module header -->
+<link href="style.css" rel="stylesheet" type="text/css" />
+<{$xoops_module_header}>
+<script type="text/javascript">
+<!--
+<{$xoops_js}>
+//-->
+</script>
+</head>
+<body>
+<TABLE WIDTH=766 BORDER=0 CELLPADDING=0 CELLSPACING=0 id="header" >
+	<TR>
+		<TD ROWSPAN=2>
+			<IMG SRC="<{$xoops_imageurl}>header/header_01.jpg" WIDTH=283 HEIGHT=169 ALT=""></TD>
+		<TD>
+			<a href="<{$xoops_url}>/index.php" target="_self"><IMG SRC="<{$xoops_imageurl}>header/header_02.gif" ALT="" WIDTH=62 HEIGHT=54 border="0"></a></TD>
+		<TD>			<a href="<{$xoops_url}>/modules/news/" target="_self"><img src="<{$xoops_imageurl}>header/header_03.gif" alt="" width=77 height=54 border="0" /></a></TD>
+		<TD>
+			<a href="<{$xoops_url}>/modules/newbb/" target="_self"><IMG SRC="<{$xoops_imageurl}>header/header_04.gif" ALT="" WIDTH=63 HEIGHT=54 border="0"></a></TD>
+		<TD>
+			<a href="<{$xoops_url}>/modules/mydownloads/" target="_self"><IMG SRC="<{$xoops_imageurl}>header/header_05.gif" ALT="" WIDTH=99 HEIGHT=54 border="0"></a></TD>
+		<TD>
+			<a href="<{$xoops_url}>/modules/xcgal/" target="_self"><IMG SRC="<{$xoops_imageurl}>header/header_06.gif" ALT="" WIDTH=110 HEIGHT=54 border="0"></a></TD>
+		<TD>
+			<a href="<{$xoops_url}>/modules/contact/" target="_self"><IMG SRC="<{$xoops_imageurl}>header/header_07.gif" ALT="" WIDTH=72 HEIGHT=54 border="0"></a></TD>
+	</TR>
+	<TR>
+		<TD COLSPAN=6>
+			<IMG SRC="<{$xoops_imageurl}>header/header_08.jpg" WIDTH=483 HEIGHT=115 ALT=""></TD>
+	</TR>
+	<TR>
+		<TD COLSPAN=7>
+			<IMG SRC="<{$xoops_imageurl}>header/header_09.gif" WIDTH=766 HEIGHT=30 ALT=""></TD>
+	</TR>
+</TABLE>
+<table width="100%" border="0" cellpadding="0" cellspacing="0" id="okvir">
+  <tr>
+    <td>
+      <table width="100%"  border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td width="25%" rowspan="2" id="leftcolumn"><{foreach item=block from=$xoops_lblocks}> <div class="<{cycle values="blockTitle"}>"><{$block.title}></div>
+          <div class="blockContent"><{$block.content}></div>
+<img src="<{$xoops_imageurl}>images/160.gif" width="206" height="1" alt="" />
+    <{/foreach}> </td>
+    <td width="75%" colspan="2" ><div align="center"><{$xoops_banner}></div></td>
+  </tr>
+  <tr>
+    <td colspan="2"><table width="100%"  border="0" cellspacing="0" cellpadding="0" id="glavna">
+      <tr>
+        <td id="centercolumn">
+          <!-- Display center blocks if any -->
+<{if $xoops_showcblock == 1}>
+      <table class="sadrzaj" cellspacing="0">
+        <tr>
+          <td id="centerCcolumn" colspan="2">
+            <!-- Start center-center blocks loop -->
+<{foreach item=block from=$xoops_ccblocks}>
+            <table align="center" cellpadding="0" cellspacing="2">
+              <tr>
+                <td>
+                  <div class="blockTitle"><{$block.title}></div>
+                  <div class="blockContent"><{$block.content}></div></td>
+              </tr>
+            </table>
+<{/foreach}>
+            <!-- End center-center blocks loop -->
+          </td>
+        </tr>
+        <tr>
+          <td id="centerLcolumn">
+            <!-- Start center-left blocks loop -->
+<{foreach item=block from=$xoops_clblocks}>
+            <table class="blok" align="center" cellpadding="3" cellspacing="2">
+              <tr>
+                <td>
+                  <div class="blockTitle"><{$block.title}></div>
+                  <div class="blockContent"><{$block.content}></div></td>
+              </tr>
+            </table>
+<{/foreach}>
+            <!-- End center-left blocks loop -->
+          </td>
+          <td id="centerRcolumn">
+            <!-- Start center-right blocks loop -->
+<{foreach item=block from=$xoops_crblocks}>
+            <table class="blok" align="center" cellpadding="3" cellspacing="2">
+              <tr>
+                <td>
+                  <div class="blockTitle"><{$block.title}></div>
+                  <div class="blockContent"><{$block.content}></div></td>
+              </tr>
+            </table>
+<{/foreach}>
+            <!-- End center-right blocks loop -->
+          </td>
+        </tr>
+      </table>
+<{/if}>
+      <!-- End display center blocks -->
+      <div id="content"> <{$xoops_contents}> </div></td>
+        <td id="rightcolumn">
+          <!-- Start right blocks loop -->
+<{foreach item=block from=$xoops_rblocks}>
+      <div class="<{cycle values="blockTitle,blockTitle"}>"><{$block.title}></div>
+      <div class="blockContent"><{$block.content}></div>
+      <img src="<{$xoops_imageurl}>images/160.gif" width="207" height="1" alt="" /> <{/foreach}>
+      <!-- End right blocks loop -->
+        </td>
+      </tr>
+    </table></td>
+  </tr>
+</table> </td>
+  </tr>
+</table>
+<table cellpadding="0" cellspacing="0" class="dole">
+  <tr>
+    <td ><div class="privatnost"><br />
+<!-- Start Custom Links  /  Edit or remove next line -->
+<br />
+ <!-- End Custom Links -->
+  <br />
+Copyright © 2005 by yourcompany.com<br />
+Theme designed by <a href="http://www.xoopsdesign.com" target="_blank">Xoopsdesign.com</a></div></td>
+  </tr>
+</table>
+</body>
+</html>
